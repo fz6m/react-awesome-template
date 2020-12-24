@@ -32,7 +32,7 @@
 `src/utils/request.js`| axios 基础封装出口
 `src/App.jsx`| router-view
 `src/index.js`| react 应用入口
-`src/index.css`| 全局样式
+`src/index.less`| 全局样式
 
 ### Options
 
@@ -83,3 +83,13 @@
 `src/router/header.js`| 动态 HTML 文件头配置示例
 `src/router/index.js`| 路由配置示例
 `src/store/example`| redux-saga 编写示例
+
+### Build
+
+执行生产环境发布前，请确认如下事项：
+
+1. `public/index.html` 内 `<head>` 头部信息与该文件夹相关 logo 图标、`manifest.json` 配置
+
+2. `.env.production` 内 `REACT_APP_BASE_API` 与 `PUBLIC_URL` 
+
+3. `config-overrides.js` 内 `title` 变量与 `splitChunk` 分包策略
