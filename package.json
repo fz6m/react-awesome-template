@@ -27,12 +27,6 @@
     "fix": "eslint --fix --ext .js,.jsx \"src\"",
     "prettier": "prettier -c --write \"src/**/*.js\" \"src/**/*.jsx\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       "last 5 version",
