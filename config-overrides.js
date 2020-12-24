@@ -14,6 +14,7 @@ const path = require('path')
 
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 
+// index.html 文件默认标题
 const title = 'react-awesome-template'
 
 // 是否输出配置到文件便于查看
