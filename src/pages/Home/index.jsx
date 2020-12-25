@@ -4,12 +4,15 @@ import styled from '@emotion/styled'
 // 1. external css fileal css filecss file
 import './home.less'
 
-// 2. styled-component
+// 2. use css module
+import style from './home.module.less'
+
+// 3. styled-component
 const RedText = styled.div`
   color: red;
 `
 
-// 3. css props
+// 4. css props
 const GreenText = {
   color: 'green',
 }
@@ -20,8 +23,10 @@ export default function Home() {
       {/* programme 1 */}
       <div className="orange">Independent css file style</div>
       {/* programme 2 */}
-      <RedText>Home</RedText>
+      <div className={style.pink}>Css module</div>
       {/* programme 3 */}
+      <RedText>Css styled component</RedText>
+      {/* programme 4 */}
       <div css={GreenText}>Css props style</div>
     </Fragment>
   )
