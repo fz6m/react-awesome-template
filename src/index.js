@@ -5,8 +5,11 @@ import App from './App'
 // icons
 import './icons'
 
+// reset
+import 'normalize.css/normalize.css'
+
 // index css
-import './index.less'
+import './index.scss'
 
 // redux
 import { Provider } from 'react-redux'

@@ -12,6 +12,7 @@
 `redux-saga`| async | 提供 redux 中异步业务的支持
 `react-redux`| global store | 全局状态管理
 `less`| css | 支持使用 less 语法
+`sass`| css | 支持使用 sass 语法
 `@emotion`| css | 支持使用 css-in-js ( css props / styled-components )
 `react-helmet`| resource | 对 HTML 文件头 `<head>` 提供完备支持
 
@@ -32,7 +33,7 @@
 `src/utils/request.js`| axios 基础封装出口
 `src/App.jsx`| router-view
 `src/index.js`| react 应用入口
-`src/index.less`| 全局样式
+`src/index.scss`| 全局样式
 
 ### Options
 
@@ -78,11 +79,12 @@
 路径|说明
 :-:|:-
 `src/api/index.js`| axios 统一 api 分发示例
-`src/pages/Home/index.jsx`| css-in-js / less 使用示例
+`src/pages/Home/index.jsx`| css-in-js / less / css module 使用示例
 `src/pages/Error/index.jsx`| redux-saga 使用示例
 `src/router/header.js`| 动态 HTML 文件头配置示例
 `src/router/index.js`| 路由配置示例
 `src/store/example`| redux-saga 编写示例
+`src/index.scss`| sass 使用示例
 
 ### Build
 
