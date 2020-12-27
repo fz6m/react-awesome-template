@@ -10,7 +10,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '/'}>
       <Head header={header.global} />
       <Switch>
-        {routes().map((route) => {
+        {routes.map((route) => {
           return (
             <Route
               exact={route.exact ?? false}
