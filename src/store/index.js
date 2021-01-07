@@ -16,8 +16,10 @@ const rootReducer = combineReducers({ example })
 const store = createStore(
   rootReducer,
   applyMiddleware(
-    sagaMiddleware,
-    process.env.NODE_ENV === 'development' && logger
+    ...[
+      sagaMiddleware,
+      process.env.NODE_ENV === 'development' && logger,
+    ].filter(Boolean)
   )
 )
 
