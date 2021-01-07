@@ -2,10 +2,10 @@ import { Fragment } from 'react'
 import styled from '@emotion/styled'
 
 // 1. external css fileal css filecss file
-import './home.less'
+import './index.less'
 
 // 2. use css module
-import style from './home.module.less'
+import style from './index.module.less'
 
 // 3. styled-component
 const RedText = styled.div`
