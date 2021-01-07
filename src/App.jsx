@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { hot } from 'react-hot-loader/root'
 
 import { routes } from './router'
 import { header } from './router/header'
@@ -30,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default hot(App)

@@ -69,6 +69,7 @@ module.exports = {
       '@a': resolve('src/assets'),
       '@c': resolve('src/components'),
       '@p': resolve('src/pages'),
+      'react-dom': '@hot-loader/react-dom',
     }),
 
     // 全局 less 资源
@@ -93,7 +94,10 @@ module.exports = {
 
     // babel plugin
     addBabelPlugins(
-      process.env.NODE_ENV === 'production' ? '@emotion' : 'dynamic-import-node'
+      process.env.NODE_ENV === 'production'
+        ? '@emotion'
+        : 'dynamic-import-node',
+      'react-hot-loader/babel'
     ),
 
     (config) => {
