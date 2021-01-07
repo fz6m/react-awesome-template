@@ -2,6 +2,8 @@
 
 一个完善的 react 项目起始模板，对 Restful 、css-in-js 、异步业务等有即开即用的支持
 
+*template version: 1.1*
+
 *react version: 17.0*
 
 ### Support
@@ -69,6 +71,7 @@
 库|说明
 :-:|:-
 `redux-logger`| 支持开发环境实时 redux 调用日志
+`react-hot-loader`| 提供开发环境对 react hooks 的即时替换支持
 `svg-sprite-loader`| 提供全局 svg 复用
 `script-ext-html-webpack-plugin`| 支持 runtime 抽取内联
 
