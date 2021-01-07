@@ -11,6 +11,7 @@
 库|分类|说明
 :-:|:-:|:-
 `axios`| restful | 成熟的 Api 请求库
+`swr`| restful | 流行的 Api 请求与缓存库
 `redux-saga`| async | 提供 redux 中异步业务的支持
 `react-redux`| global store | 全局状态管理
 `less`| css | 支持使用 less 语法
@@ -27,12 +28,14 @@
 `src/components/SvgIcon`| 对 svg 复用提供支持
 `src/icons/svg`| 全局 svg 存放文件夹
 `src/pages`| 页面文件夹
+`src/plugins`| 全局插件与配置文件夹
 `src/router/header.js`| 各页面动态头部配置文件
 `src/router/index.js`| 路由配置文件
 `src/store`| redux 全局状态管理与 saga 异步业务文件夹
 `src/styles`| 全局样式存放文件夹
 `src/utils`| 全局工具存放文件夹
 `src/utils/request.js`| axios 基础封装出口
+`src/utils/swr.js`| swr fetcher 封装出口
 `src/App.jsx`| router-view
 `src/index.js`| react 应用入口
 `src/index.scss`| 全局样式
@@ -83,7 +86,8 @@
 :-:|:-
 `src/api/index.js`| axios 统一 api 分发示例
 `src/pages/Home/index.jsx`| css-in-js / less / css module 使用示例
-`src/pages/Error/index.jsx`| redux-saga 使用示例
+`src/pages/Error/index.jsx`| 常规 api / redux-saga 使用示例
+`src/pages/Error/swr.jsx`| swr 使用示例
 `src/router/header.js`| 动态 HTML 文件头配置示例
 `src/router/index.js`| 路由配置示例
 `src/store/example`| redux-saga 编写示例
