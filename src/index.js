@@ -15,6 +15,9 @@ import './index.scss'
 import { Provider } from 'react-redux'
 import store from './store'
 
+// axios global config
+import './plugins/axios'
+
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
