@@ -2,7 +2,7 @@
 
 一个完善的 react 项目起始模板，对 Restful 、css-in-js 、异步业务等有即开即用的支持
 
-*template version: 1.1*
+*template version: 1.2*
 
 *react version: 17.0*
 
