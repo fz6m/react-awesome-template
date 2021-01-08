@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import App from './App'
 
 // icons
@@ -21,9 +22,11 @@ import './plugins/axios'
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <ErrorBoundary>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </ErrorBoundary>,
   document.getElementById('root')
 )
 
