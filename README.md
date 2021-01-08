@@ -26,6 +26,7 @@
 `src/api`| axios 统一 api 分发文件夹
 `src/components/Head`| 支持 单页面 / 全局 的动态标题与资源引入
 `src/components/SvgIcon`| 对 svg 复用提供支持
+`src/components/ErrorBoundary`| 全局错误边界
 `src/icons/svg`| 全局 svg 存放文件夹
 `src/pages`| 页面文件夹
 `src/plugins`| 全局插件与配置文件夹
